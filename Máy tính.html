@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Máy tính</title>
+</head>
+<body>
+    <div class="container">
+        <input id="kp">
+        <Br></Br>
+        <div>
+            <input style="width:98px" type="button" value="C" id="xoa" onclick="xoa()">
+            <input style="width:30px"type="button" value="/" id="chia" onclick="kp.value+=this.value">
+        </div>
+        <div>
+            <input style="width:30px" type="button" value="1" id="mot" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="2" id="hai" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="3" id="ba" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="*" id="nhan" onclick="kp.value+=this.value">
+        </div>
+        <div>
+            <input style="width:30px" type="button" value="4" id="bon" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="5" id="nam" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="6" id="sau" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="-" id="tru" onclick="kp.value+=this.value">
+        </div>
+        <div>
+            <input style="width:30px" type="button" value="7" id="bay" oonclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="8" id="tam" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="9" id="chin" onclick="kp.value+=this.value">
+            <input style="width:30px" type="button" value="+" id="cong" onclick="kp.value+=this.value">
+        </div>
+        <div>
+            <!-- Viết cách này nó sẽ hiển thị giá trị value từng cái 
+            <input style="width:98px" type="button" value="0" id="khong" onclick="kp.value+=this.value"> -->
+            <input style="width:30px"type="button" value="=" id="result" onclick="result()"> 
+            <input style="width:98px" type="button" value="0" id="khong" onclick="kp.value+=this.value">        
+        </div>
+    </div>
+
+    <script>
+        // function result(){
+        //     // var kp =document.getElementById("kp");
+        //     // (kp.value += this.value);
+        //     // // console.log(kp);
+        // }
+  
+		function mot(){
+			var input = document.getElementById('result');
+			input.ketqua += "1"
+		}
+		function hai(){
+			var input = document.getElementById('result');
+			input.ketqua += "2"
+		}
+		function ba(){
+			var input = document.getElementById('result');
+			input.ketqua += "3"
+		}
+
+        
+    // var arr = [];
+    // function result(){
+    // // console.log(arr);
+    // var bang = 0;
+    //     for(var i=0; i<arr.length; i++){
+    //         bang += parseInt(arr[i]);
+    //     }
+    //     console.log(bang);
+    //     }
+
+    </script>
+</body>
+</html>
